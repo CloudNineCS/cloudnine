@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72ec6c0d-aa87-4475-993b-d46fc86b9d03" name="Default" comment="">
+<<<<<<< Updated upstream
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/.keep" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/concerns/.keep" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/mailers/.keep" />
@@ -104,6 +105,14 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/views.yml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/models/project_test.rb" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/models/user_test.rb" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/static_pages.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/static_pages.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/static_pages_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/controllers/static_pages_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="cloudnine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -643,12 +652,27 @@
       <option name="presentableId" value="Default" />
       <updated>1471860520722</updated>
       <workItem from="1471860522132" duration="367000" />
+<<<<<<< Updated upstream
       <workItem from="1471887359053" duration="1389000" />
+=======
+      <workItem from="1471887359053" duration="4673000" />
+    </task>
+    <task id="LOCAL-00001" summary="+devise and projects">
+      <created>1471888777064</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1471888777064</updated>
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="1756000" />
+=======
+    <option name="totallyTimeSpent" value="5040000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="24" width="1859" height="1056" extended-state="6" />
