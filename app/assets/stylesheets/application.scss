@@ -1,2 +1,23 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#content{
+  padding: 0px 50px 0px 50px;
+}
+
+.ffh{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navbar-nav {
+  float: none;
+  text-align: center;
+}
+.navbar-nav li {
+  float: none;
+  display: inline-block;
+  min-width: 120px;
+  max-width: 120px;
+}
+
+
