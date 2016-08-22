@@ -1,25 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Projects</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="container">
+  <h1 class="text-center ffh">Проекты</h1>
+  <ul class="row project-list">
     <% @projects.each do |project| %>
-      <tr>
-        <td><%= link_to 'Show', project %></td>
-        <td><%= link_to 'Edit', edit_project_path(project) %></td>
-        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <a href="<%= project.url%>" >
+          <li class="project-box">
+            <div class="title"><%= project.title %></div>
+            <%= image_tag(project.picture.url(), width: '310px', height: '180px', class: 'project-img') %>
+            <div class="description"><%= project.title %></div>
+          </li>
+        </a>
     <% end %>
-  </tbody>
-</table>
+  </ul>
+</div>
 
-<br>
 
-<%= link_to 'New Project', new_project_path %>
+
+
