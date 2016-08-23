@@ -1,14 +1,21 @@
 <%= simple_form_for(@comment) do |f| %>
   <%= f.error_notification %>
+    <div class = 'col-md-12 col-sm-12' style="margin-bottom: 10px">
+      <%= f.label 'Текст:' %><br>
+      <%= f.text_area :text, class: 'form-control' %>
+    </div>
 
-  <div class="form-inputs">
-    <%= f.input :text %>
-    <%= f.input :url %>
-    <%= f.input :logo, as: :file %>
-  </div>
+    <div class = 'col-md-12 col-sm-12' style="margin-bottom: 10px">
+      <%= f.label 'Ссылка:' %><br>
+      <%= f.text_field :url, class: 'form-control' %>
+    </div>
+    <div class = 'col-md-12 col-sm-12' style="margin-bottom: 10px">
+      <%= f.label 'Логотип:' %><br>
+      <%= f.file_field :logo,  class: 'form-control' %>
+    </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+    <div class="col-md-12 col-sm-12">
+      <%= f.button :submit, value: 'Создать', class: 'btn btn-main btn-mr'  %>
+    </div>
 
 <% end %>

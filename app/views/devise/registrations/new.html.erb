@@ -1,17 +1,26 @@
-<h2>Sign up</h2>
-
-<%= simple_form_for(resource, as: resource_name, url: user_registration_path(resource_name)) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.input :email, required: true, autofocus: true %>
-    <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
-    <%= f.input :password_confirmation, required: true %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
-  </div>
+<% if user_signed_in? %>
+  <h1 class="text-center ffh">регистрация</h1>
+  <%= simple_form_for(resource, as: resource_name, url: user_registration_path(resource_name)) do |f| %>
+    <%= f.error_notification %>
+        <div class="form-inputs col-md-6">
+        <div class="form-group col-md-12">
+          <%= f.label :email %>
+          <%= f.email_field :email, class: 'form-control' %>
+        </div>
+        <div class="form-group col-md-12">
+          <%= f.label 'Пароль:' %>
+          <%= f.password_field :password, class: 'form-control' %>
+        </div>
+        <div class="form-group col-md-12">
+          <%= f.label 'Подтверждение пароля:' %>
+          <%= f.password_field :password_confirmation, class: 'form-control' %>
+        </div>
+        <div class="form-actions col-md-12">
+          <%= f.button :submit, "Sign up" %>
+        </div>
+      </div>
+    <% end %>
+<% else %>
 <% end %>
 
-<%= render "devise/shared/links" %>
+
