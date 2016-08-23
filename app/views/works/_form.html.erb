@@ -1,0 +1,21 @@
+<% @work = Work.new %>
+<%= simple_form_for(@work) do |f| %>
+    <%= f.error_notification %>
+    <div class = 'col-md-6 col-sm-12' style="margin-bottom: 10px">
+      <%= f.label 'Ваше имя:' %><br>
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
+
+    <div class = 'col-md-6 col-sm-12' style="margin-bottom: 10px">
+      <%= f.label 'email:' %><br>
+      <%= f.text_field :email, class: 'form-control' %>
+    </div>
+    <div class = 'col-md-12 col-sm-12' style="margin-bottom: 10px">
+      <%= f.label 'Сообщение:' %><br>
+      <%= f.text_area :description, class: 'form-control' %>
+    </div>
+
+    <div class="col-md-12 col-sm-12">
+      <%= f.button :submit, value: 'Создать', class: 'btn btn-main btn-mr'  %>
+    </div>
+<% end %>
