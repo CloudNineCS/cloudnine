@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :comments
   devise_for :users
   resources :projects
   get 'about' => 'static_pages#about'

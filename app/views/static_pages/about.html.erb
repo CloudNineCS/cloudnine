@@ -1,1 +1,29 @@
-ABOUT
+<h1 class="text-center ffh">О нас</h1>
+<div class="col-md-12">
+  <div class="col-md-7" style=" padding: 0px 15px 0px 15px">
+    <h2 class="ffh text-center">Кто мы?</h2>
+    <hr />
+    <p style="padding: 0px 15px 0px 15px" >Мы <b style="color: dodgerblue">Cloud Nine</b>, компания которая дорожит своей репутацией, производя только качественный продукт с помощью новейших технологий.
+      Мы найдем индивидуальный подход к каждому клиенту, и реализуем любые Ваши задумки. </p>
+  </div>
+  <div class="col-md-4" style="float: right">
+    <div class="comment">
+      <% @random_comment = Comment.all.shuffle.last %>
+      <h2 class="ffh text-center">Отзывы наших клиентов</h2>
+      <hr/>
+      <table>
+        <tr>
+          <td>
+            <a href="<%= @random_comment.url %>">
+              <%= image_tag(@random_comment.logo.url, width: '75px', height: '75px', class: 'img-circle comment-img') %>
+            </a>
+          </td>
+          <td style="display: block; padding: 0px 15px 0px 15px">
+            <p><%= @random_comment.text %> </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</div>
