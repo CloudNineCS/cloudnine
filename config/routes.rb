@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+  devise_for :users do
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  end
+  resources :works
   resources :comments
-  devise_for :users
   resources :projects
   get 'about' => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
-
   root to: "projects#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160823104439) do
+ActiveRecord::Schema.define(version: 20160823113032) do
 
   create_table "comments", force: :cascade do |t|
     t.string   "text"
@@ -53,5 +53,13 @@ ActiveRecord::Schema.define(version: 20160823104439) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+
+  create_table "works", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
 end
