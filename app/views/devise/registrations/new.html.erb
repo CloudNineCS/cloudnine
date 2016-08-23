@@ -1,4 +1,3 @@
-<% if user_signed_in? %>
   <h1 class="text-center ffh">регистрация</h1>
   <%= simple_form_for(resource, as: resource_name, url: user_registration_path(resource_name)) do |f| %>
     <%= f.error_notification %>
@@ -20,7 +19,5 @@
         </div>
       </div>
     <% end %>
-<% else %>
-<% end %>
 
 
