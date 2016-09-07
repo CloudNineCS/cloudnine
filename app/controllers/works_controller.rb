@@ -29,9 +29,9 @@ class WorksController < ApplicationController
 
     respond_to do |format|
       if @work.save
-        format.html { redirect_to contact_path, notice: 'Work was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Work was successfully created.' }
       else
-        format.html { redirect_to contact_path }
+        format.html { redirect_to root_path }
         format.json { render json: @work.errors, status: :unprocessable_entity }
       end
     end

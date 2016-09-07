@@ -16,8 +16,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-#content{
+.main-content{
   padding: 0px 50px 0px 50px;
+
 }
 
 .ffh{
@@ -51,6 +52,51 @@
 .admin-container{
   background-color: #666666;
   border-bottom: 1px solid dodgerblue;
+}
+
+.top-div{
+  display: block;
+  background: image-url('background2.jpeg') no-repeat;
+  min-height: 600px;
+  background-size: cover;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-size: 40pt;
+  margin-top: -20px;
+  padding-top: 50px;
+}
+
+.circle{
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  background-color: white;
+  height: 250px;
+  width: 250px;
+  padding-top:55px;
+  box-shadow: 0 8px 8px rgba(50, 50, 50, 0.5);
+}
+.circle:hover{
+  box-shadow: 0 6px 8px rgba(50, 50, 50, 0.5);
+  background-color: #E4F1FE;
+}
+
+.top-text{
+  margin-top: 30px;
+}
+
+.text-center{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+footer{
+  display: block;
+  height: 100px;
+  margin-top: 50px;
+  padding-top: 40px!important;
+  text-align: center;
 }
 
 
